@@ -1,0 +1,35 @@
+site_name: AT-BCI
+site_description: A research project on brain-computer interfaces to control assistive technology.
+site_author: Febo Cincotti
+
+theme:
+  name: "material"
+  language: en
+  palette:
+    scheme: atbci
+  features:  # required to enable redirects with front matter
+    - navigation.instant
+
+markdown_extensions:
+  - pymdownx.tasklist
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+  - css/extra.css
+  - css/tasklists.css
+
+plugins:
+  - search
+  # - redirects
+
+
+# nav:
+#   - Sinossi: index.md
+#   - Esame: exam-phases.md
+#   - Software: os-and-software.md
+#   - Appendice: troubleshooting.md
+
+nav:
+  - Home: index.md
