@@ -3,17 +3,33 @@
   --md-primary-fg-color--light: #78bbf2;
   --md-primary-fg-color--dark:  #225c94;
 } */
-
+[data-md-color-scheme="slate"] {
+  --md-hue: 07;  /* Primary color hue -- FIXME: not working. */
+}
+[data-md-color-scheme="atbci"] img[src$="#only-dark"],
+[data-md-color-scheme="atbci"] img[src$="#gh-dark-mode-only"] {
+  display: none; /* Hide dark images in light mode */
+}
 [data-md-color-scheme="atbci"] {
   --md-primary-fg-color:        #499adc;
   --md-primary-fg-color--light: #78bbf2;
   --md-primary-fg-color--dark:  #225c94;
-};
-[data-md-color-scheme="slate"] {
-  --md-hue: 07; 
 }
+
 /* [data-md-color-scheme="atbci-dark"] {
   --md-primary-fg-color:        #499adc;
   --md-primary-fg-color--light: #78bbf2;
   --md-primary-fg-color--dark:  #225c94;
 } */
+
+/* Convert black SVG images to other colors 
+   See https://codepen.io/sosuke/pen/Pjoqqp
+*/
+
+.black-to-some-red{
+  filter: invert(18%) sepia(64%) saturate(3775%) hue-rotate(353deg) brightness(82%) contrast(104%);
+}
+
+.black-to-fsl-blue{
+  filter: invert(18%) sepia(64%) saturate(3775%) hue-rotate(200deg) brightness(62%) contrast(104%);
+}

@@ -44,15 +44,19 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-
+  - attr_list  # image size and alignment
+ 
 extra_css:
+  - css/styles.css
   - css/palette.css
   - css/tasklists.css
 
 plugins:
-  - redirects: {redirect_maps: {'index.md': 'en/index.md'}}
-    # redirect_maps:
-  #     'index.md': 'en/index.md'
+  - redirects: {
+    redirect_maps: {
+      'index.md': 'en/index.md'
+    }
+  }
   - search
 
 # nav:
