@@ -26,6 +26,7 @@
    See https://codepen.io/sosuke/pen/Pjoqqp
 */
 
+
 .black-to-some-red{
   filter: invert(18%) sepia(64%) saturate(3775%) hue-rotate(353deg) brightness(82%) contrast(104%);
 }
@@ -35,4 +36,7 @@
 }
 .black-to-white{
   filter: invert(100%);
+}
+.brighter{
+  filter: brightness(500%);
 }
