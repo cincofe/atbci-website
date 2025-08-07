@@ -1,0 +1,19 @@
+/* :root  > * {
+  --md-primary-fg-color:        #499adc;
+  --md-primary-fg-color--light: #78bbf2;
+  --md-primary-fg-color--dark:  #225c94;
+} */
+
+[data-md-color-scheme="atbci"] {
+  --md-primary-fg-color:        #499adc;
+  --md-primary-fg-color--light: #78bbf2;
+  --md-primary-fg-color--dark:  #225c94;
+};
+[data-md-color-scheme="slate"] {
+  --md-hue: 07; 
+}
+/* [data-md-color-scheme="atbci-dark"] {
+  --md-primary-fg-color:        #499adc;
+  --md-primary-fg-color--light: #78bbf2;
+  --md-primary-fg-color--dark:  #225c94;
+} */

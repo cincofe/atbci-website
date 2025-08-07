@@ -1,4 +1,4 @@
-# AT-BCI Website
+# AT-BCI Website development
 
 View the pages locally:
 
@@ -16,4 +16,4 @@ uv run mkdocs gh-deploy
 
 The published pages are available at:
 
-[https://neuroeng-sapienza.github.io/maadb-exam-instructions/](https://neuroeng-sapienza.github.io/maadb-exam-instructions/)
+[https://atbci.it](https://atbci.it)

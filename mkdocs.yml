@@ -1,14 +1,43 @@
 site_name: AT-BCI
 site_description: A research project on brain-computer interfaces to control assistive technology.
 site_author: Febo Cincotti
+site_url: https://atbci.it
+copyright: Copyright &copy; 2025 Fondazione Santa Lucia IRCCS, Rome, Italy
 
 theme:
   name: "material"
   language: en
   palette:
-    scheme: atbci
+    # Palette toggle for light mode
+    - scheme: atbci
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    # - scheme: atbci-dark
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  logo: img/atbci_icon_v1.0-dark.png
+  favicon: img/atbci_icon_v1.0-dark.png
   features:  # required to enable redirects with front matter
-    - navigation.instant
+    - navigation.tabs
+    - navigation.path
+    - header.autohide
+    # - navigation.tabs.sticky
+    # - navigation.instant
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Italiano
+      link: /it/
+      lang: de
+
+  generator: false # Remove the "Made with MkDocs" footer
+
 
 markdown_extensions:
   - pymdownx.tasklist
@@ -17,13 +46,14 @@ markdown_extensions:
   - pymdownx.superfences
 
 extra_css:
-  - css/extra.css
+  - css/palette.css
   - css/tasklists.css
 
 plugins:
+  - redirects: {redirect_maps: {'index.md': 'en/index.md'}}
+    # redirect_maps:
+  #     'index.md': 'en/index.md'
   - search
-  # - redirects
-
 
 # nav:
 #   - Sinossi: index.md
