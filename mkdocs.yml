@@ -27,6 +27,8 @@ theme:
     - header.autohide
     # - navigation.tabs.sticky
     # - navigation.instant
+  custom_dir: overrides
+
 extra:
   alternate:
     - name: English
@@ -52,12 +54,11 @@ extra_css:
   - css/tasklists.css
 
 plugins:
-  - redirects: {
-    redirect_maps: {
-      'index.md': 'en/index.md'
-    }
-  }
+  - redirects:
+      redirect_maps:
+        'index.md': 'en/index.md'
   - search
+
 
 # nav:
 #   - Sinossi: index.md

@@ -8,8 +8,3 @@ AT-BCI è un progetto di ricerca su interfacce cervello-computer per il controll
 
 ---
 
-<!-- TODO: adapt for dark theme -->
-![Logo Ministero della Salute](../img/Ministero_della_Salute_Logo.svg){ width="240" }
-![Logo Italia Domani](../img/italia_domani.svg){ width="200" }
-![EU Logo](../img/eu_logo_head-330ae019b2a956601c5515223428920d.svg){ width="200" }
-![Logo FSL](../img/sl-logo-completo-orizzontale.svg){ width="220", .black-to-fsl-blue }
