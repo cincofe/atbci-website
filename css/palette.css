@@ -33,3 +33,6 @@
 .black-to-fsl-blue{
   filter: invert(18%) sepia(64%) saturate(3775%) hue-rotate(200deg) brightness(62%) contrast(104%);
 }
+.black-to-white{
+  filter: invert(100%);
+}
